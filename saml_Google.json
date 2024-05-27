@@ -1,0 +1,23 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "https://{your domain or for dev your ngrok-free.app}",
+        "assertionConsumerService": {
+            "url": "https://{your domain or for dev your ngrok-free.app}/api/acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "LS0tLS1..."
+        "privateKey": "LS0tLS1..."
+    },
+    "idp": {
+        "entityId": "https://accounts.google.com/o/saml2?idpid={your tenant id}",
+        "singleSignOnService": {
+            "url": "https://accounts.google.com/o/saml2/idp?idpid={your tenant id}",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIDdDCCAl..."
+    }
+}
+

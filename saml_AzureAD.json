@@ -1,0 +1,22 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "https://{{your domain or for dev your ngrok-free.app}}",
+        "assertionConsumerService": {
+            "url": "https://{{your domain or for dev your ngrok-free.app}}/api/acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "MIIC8DCCAd..."
+    },
+    "idp": {
+        "entityId": "https://sts.windows.net/{your tenant id}/",
+        "singleSignOnService": {
+            "url": "https://login.microsoftonline.com/{your tenant id}/saml2",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIC8DCCAd..."
+    }
+}
+
