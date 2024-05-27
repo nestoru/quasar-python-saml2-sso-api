@@ -1,8 +1,8 @@
 {
-    "FLASK_SECRET_KEY": "Libr3mp0rio!!",
+    "FLASK_SECRET_KEY": "your_flask_secret_key",
     "PGUSER": "padmin",
-    "PGPASSWORD": "Libr3mp0rio",
-    "PGHOST": "portal.postgres.database.azure.com",
+    "PGPASSWORD": "your_pass",
+    "PGHOST": "your_db_host",
     "PGPORT": "5432",
     "PGDATABASE": "postgres",
     "DOMAIN": "f1ae-85-57-125-133.ngrok-free.app"
